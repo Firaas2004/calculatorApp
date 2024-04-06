@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculatorContainer">
+      <div class="calBar">
+        <div>
+          <h2 id="display"></h2>
+        </div>
+      </div>
+      <div class="keyPad">
+        <button onclick="clearDisplay()" class="milk" id="clear">C</button>
+        <button
+          onclick="appendToDisplay('+/-')"
+          class="milk"
+          id="plusMinus"
+          value="+/-"
+        >
+          +/-
+        </button>
+        <button onclick="appendToDisplay('%')" class="milk" id="percentage">
+          %
+        </button>
+        <button onclick="appendToDisplay('/')" class="milk" id="slash">
+          /
+        </button>
+        <button onclick="appendToDisplay(7)" class="grey">7</button>
+        <button onclick="appendToDisplay(8)" class="grey">8</button>
+        <button onclick="appendToDisplay(9)" class="grey">9</button>
+        <button onclick="appendToDisplay('*')" class="milk">*</button>
+        <button onclick="appendToDisplay(4)" class="grey">4</button>
+        <button onclick="appendToDisplay(5)" class="grey">5</button>
+        <button onclick="appendToDisplay(6)" class="grey">6</button>
+        <button onclick="appendToDisplay('-')" class="milk">-</button>
+        <button onclick="appendToDisplay(1)" class="grey">1</button>
+        <button onclick="appendToDisplay(2)" class="grey" id="two">2</button>
+        <button onclick="appendToDisplay(3)" class="grey">3</button>
+        <button onclick="appendToDisplay('+')" class="milk" id="plus">+</button>
+        <button onclick="appendToDisplay('.')" class="milk">.</button>
+        <button onclick="appendToDisplay(0)" class="grey">0</button>
+        <button onclick="equalTo()" class="yellow equal" id="equal">=</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
