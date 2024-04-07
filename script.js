@@ -3,7 +3,7 @@ const display = document.getElementById('display');
 function appendToDisplay (something){
 display.innerText+= something;
 // alert(something)
-}
+} ``
 
 function clearDisplay(){
     display.innerText="";
